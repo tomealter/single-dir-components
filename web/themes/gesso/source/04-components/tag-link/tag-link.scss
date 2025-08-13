@@ -1,0 +1,12 @@
+@use '00-config' as *;
+
+.tag-link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    .usa-tag {
+      background-color: color('base-darker');
+    }
+  }
+}

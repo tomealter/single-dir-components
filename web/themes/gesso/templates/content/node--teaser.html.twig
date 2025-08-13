@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme implementation for a node.
+ */
+#}
+{% set classes = [
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+] %}
+
+{% include '@components/teaser/teaser.twig' with {
+  'attributes': attributes.addClass(classes),
+  'modifier_classes': '',
+  'title_modifier_classes': '',
+  'title_element': 'h2',
+  'url': url,
+  'title': label,
+  'date': date,
+  'rdf_metadata': metadata,
+  'summary': content,
+} %}
+
+{# Uncomment the following if you don’t render the content variable. #}
+{# {% set catch_cache = content|render %} #}

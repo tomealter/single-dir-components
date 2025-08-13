@@ -1,0 +1,49 @@
+// Layout: Grid
+
+@use '00-config' as *;
+
+$grid-gutter: gesso-get-map(gutter-width);
+
+.l-grid {
+  @include css-fixed-grid(1);
+}
+
+.l-grid--2-col {
+  @include css-fixed-grid(1);
+
+  @include breakpoint(600px) {
+    @include set-css-fixed-columns(2, $grid-gutter);
+  }
+}
+
+.l-grid--3-col {
+  @include css-fixed-grid(1);
+
+  @include breakpoint(760px) {
+    @include set-css-fixed-columns(3, $grid-gutter);
+  }
+}
+
+.l-grid--4-col {
+  @include css-fixed-grid(1);
+
+  @include breakpoint-min-max(600px, 800px) {
+    @include set-css-fixed-columns(2, $grid-gutter);
+  }
+
+  @include breakpoint(801px) {
+    @include set-css-fixed-columns(4, $grid-gutter);
+  }
+}
+
+.l-grid--6-col {
+  @include css-fixed-grid(1);
+
+  @include breakpoint-min-max(600px, 999px) {
+    @include set-css-fixed-columns(3, $grid-gutter);
+  }
+
+  @include breakpoint(1000px) {
+    @include set-css-fixed-columns(6, $grid-gutter);
+  }
+}

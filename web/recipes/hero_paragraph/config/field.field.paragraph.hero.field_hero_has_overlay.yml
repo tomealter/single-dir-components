@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_has_overlay
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.field_hero_has_overlay
+field_name: field_hero_has_overlay
+entity_type: paragraph
+bundle: hero
+label: 'Has overlay'
+description: 'Flag to display semi-transparent color block over image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

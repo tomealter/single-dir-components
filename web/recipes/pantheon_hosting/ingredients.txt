@@ -1,0 +1,3 @@
+pantheon-systems/drupal-integrations:^9
+drupal/pantheon_advanced_page_cache
+drupal/redis

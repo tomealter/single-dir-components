@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_embed.field_media_item
+    - paragraphs.paragraphs_type.media_embed
+  module:
+    - media_library
+id: paragraph.media_embed.default
+targetEntityType: paragraph
+bundle: media_embed
+mode: default
+content:
+  field_media_item:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

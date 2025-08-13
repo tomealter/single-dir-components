@@ -1,0 +1,22 @@
+uuid: a6878abf-2a5e-42d0-a2e5-32fe5ee7e5c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wysiwyg
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - text
+id: paragraph.call_to_action.field_wysiwyg
+field_name: field_wysiwyg
+entity_type: paragraph
+bundle: call_to_action
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

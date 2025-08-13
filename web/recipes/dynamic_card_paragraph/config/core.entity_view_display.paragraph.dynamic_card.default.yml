@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dynamic_card.field_card_reference
+    - paragraphs.paragraphs_type.dynamic_card
+id: paragraph.dynamic_card.default
+targetEntityType: paragraph
+bundle: dynamic_card
+mode: default
+content:
+  field_card_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

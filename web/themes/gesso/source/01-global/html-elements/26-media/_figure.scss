@@ -1,0 +1,19 @@
+// HTML Element: Figure
+
+@use '00-config' as *;
+
+figure {
+  margin: 0;
+
+  // Add top margin when preceded by another element.
+  * + & {
+    margin-block-start: 1em;
+  }
+
+  // Add top margin to item directly after this.
+  + * {
+    margin-block-start: 1em;
+  }
+}
+
+// figcaption {}

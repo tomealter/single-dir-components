@@ -1,0 +1,9 @@
+name: 'WYSIWYG Paragraph'
+description: 'Provides a paragraph type with a WYSIWYG field'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+
+install:
+  - paragraphs

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_viewsreference
+    - paragraphs.paragraphs_type.dynamic_list
+  module:
+    - viewsreference
+id: paragraph.dynamic_list.field_viewsreference
+field_name: field_viewsreference
+entity_type: paragraph
+bundle: dynamic_list
+label: 'Views Reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    articles: articles
+  enabled_settings: {  }
+field_type: viewsreference

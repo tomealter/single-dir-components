@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Theme implementation for a region.
+ */
+#}
+{% if content %}
+  {% embed '@uswds/nav/secondary.twig' %}
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+
+  {% endembed %}
+{% endif %}

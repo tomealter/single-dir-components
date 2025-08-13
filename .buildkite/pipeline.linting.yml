@@ -1,0 +1,86 @@
+# Consolidate the common configuration for reuse across multiple steps.
+definitions:
+  # Configure some default step values.
+  step-defaults: &step-defaults
+    timeout_in_minutes: 15
+    retry:
+      manual:
+        permit_on_passed: true
+  plugins:
+    ecr: &ecr
+      ecr#v2.7.0:
+        login: true
+        no-include-email: true
+    aws-sm: &aws-sm
+      seek-oss/aws-sm#v2.0.0:
+        file:
+          - path: "./auth.json"
+            secret-id: "buildkite/github_access_token"
+  # Will only trigger if it is either a feature branch or integration
+  linting-conditional: &linting-conditional
+    if: |
+      (
+        build.pull_request.base_branch == null
+        && build.branch != 'live'
+        && build.branch != 'main'
+      )
+      || (
+        build.pull_request.base_branch != null
+        && build.branch != 'main'
+      )
+  # Specify common agent queue parameters.
+  queues:
+    # Docker-based tasks should run in the Docker queue.
+    docker-agents: &docker-agents
+      agents:
+        queue: "docker-builders"
+env:
+  # If you do not declare buildkit:1 then arguments using for --target
+  # do not work correctly and they will build every steps.
+  DOCKER_BUILDKIT: 1
+  BUILDKIT_PROGRESS: plain
+
+  # Identify the address for the shared Buildkite ECR repository.
+  IMAGE_REPOSITORY: "165761832703.dkr.ecr.us-east-1.amazonaws.com"
+
+  # Define a common namespace for images to be published within the shared ECR repo.
+  ECR_NAMESPACE: "${IMAGE_REPOSITORY}/buildkite"
+
+
+  # Define service directory were the Dockerfile is used
+  DOCKERFILE_LOCATION: "./"
+
+  ARTIFACT_LOCATION: "./artifacts"
+steps:
+  - label: "Verify merge_request file not used."
+    key: "git-drupal-merge"
+    command: |
+      if  grep -rn --include='composer*' merge_requests . ; then
+       exit 1;
+      else
+        exit 0;
+      fi;
+
+  - label: ":heavy_check_mark: :php: Lint PHPCS"
+    key: "lint_phpcs"
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *linting-conditional
+    commands:
+      - 'echo "--- :docker: Build PHP_CodeSniffer Linting Docker Image"'
+      - "docker build --target php-linting -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting ${DOCKERFILE_LOCATION}"
+      - 'echo "--- :docker: Run PHP_CodeSniffer Linting"'
+      - "docker run --rm ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting composer phpcs"
+
+  - label: ":heavy_check_mark: :php: Lint PHPStan"
+    key: "lint_phpstan"
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *linting-conditional
+    plugins:
+      - *ecr
+    commands:
+      - 'echo "--- :docker: Build PHPStan Linting Image"'
+      - "docker build --target php-linting -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting ${DOCKERFILE_LOCATION}"
+      - 'echo "--- :docker: Run PHPStan Linting"'
+      - "docker run --rm ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting composer php-stan"

@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Theme implementation for a region.
+ */
+#}
+{% if content %}
+  {% embed '@layouts/content/content.twig' with {
+    'attributes': attributes,
+    'has_constrain': true,
+  } %}
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+
+  {% endembed %}
+{% endif %}

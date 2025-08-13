@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: next_js_site
+label: 'Next.js site'
+base_url: 'https://frontend.ddev.site'
+preview_url: 'https://frontend.ddev.site/api/preview'
+preview_secret: ''
+revalidate_url: ''
+revalidate_secret: ''

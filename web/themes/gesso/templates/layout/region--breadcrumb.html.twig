@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Theme implementation for a region.
+ */
+#}
+{% if content %}
+  {% embed '@layouts/breadcrumb/breadcrumb.twig' with {
+    'attributes': attributes,
+    'has_constrain': false,
+  } %}
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+
+  {% endembed %}
+{% endif %}

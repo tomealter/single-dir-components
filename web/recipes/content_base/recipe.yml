@@ -1,0 +1,10 @@
+name: 'Content Base'
+description: 'Provides common, re-usable field storage config for content entities'
+type: 'Content'
+
+recipes:
+  - f1_base
+
+install:
+  - node
+  - paragraphs

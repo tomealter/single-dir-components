@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Theme implementation for a checkboxes form element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The rendered checkboxes.
+ *
+ * @see template_preprocess_checkboxes()
+ */
+#}
+{# 'form-checkboxes' is a Drupal core class used by some modules (e.g., webform) #}
+{% include '@components/form-item/form-item--checkboxes/form-item--checkboxes.twig' with {
+  'attributes': attributes.addClass('form-checkboxes'),
+} %}

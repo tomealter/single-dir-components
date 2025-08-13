@@ -1,0 +1,24 @@
+name: 'Workspaces'
+description: 'Enables workspaces.'
+type: 'Workflow'
+
+install:
+  - workspaces
+  - wse
+  - wse_preview
+
+config:
+  actions:
+    user.role.authenticated:
+      grantPermissions:
+        - 'access workspace previews'
+    user.role.content_editor:
+      grantPermissions:
+        - 'administer workspaces'
+        - 'create workspace'
+        - 'delete any workspace'
+        - 'delete own workspace'
+        - 'edit any workspace'
+        - 'edit own workspace'
+        - 'view any workspace'
+        - 'view own workspace'

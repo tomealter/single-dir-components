@@ -1,0 +1,6 @@
+name: 'Acquia Hosting'
+description: 'Provides initial configuration and module enabling required for hosting on Acquia'
+type: 'Hosting'
+
+install:
+  - acquia_connector

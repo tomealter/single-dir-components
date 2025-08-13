@@ -1,0 +1,167 @@
+entity_config:
+  block_content:
+    basic:
+      enabled: false
+  image_style:
+    large:
+      enabled: true
+    medium:
+      enabled: false
+    thumbnail:
+      enabled: false
+    wide:
+      enabled: false
+  media:
+    audio:
+      enabled: false
+    document:
+      enabled: false
+    image:
+      enabled: true
+    remote_video:
+      enabled: false
+    video:
+      enabled: false
+  menu:
+    account:
+      enabled: false
+    admin:
+      enabled: false
+    footer:
+      enabled: false
+    main:
+      enabled: false
+    tools:
+      enabled: false
+  node:
+    article:
+      enabled: true
+      routes_enabled: true
+    landing_page:
+      enabled: true
+      routes_enabled: true
+    page:
+      enabled: true
+      routes_enabled: true
+  paragraph:
+    accordion:
+      enabled: true
+    accordion_item:
+      enabled: true
+    block_embed:
+      enabled: true
+    call_to_action:
+      enabled: true
+    card:
+      enabled: true
+    cards:
+      enabled: true
+    dynamic_card:
+      enabled: true
+    dynamic_list:
+      enabled: true
+    hero:
+      enabled: true
+    tab:
+      enabled: true
+    tabs:
+      enabled: true
+    wysiwyg:
+      enabled: true
+  taxonomy_term:
+    tags:
+      enabled: false
+field_config:
+  media:
+    image:
+      field_media_image:
+        enabled: true
+  node:
+    article:
+      body:
+        enabled: true
+      field_image:
+        enabled: true
+      field_tags:
+        enabled: true
+    landing_page:
+      field_content:
+        enabled: true
+      field_hero:
+        enabled: true
+    page:
+      body:
+        enabled: true
+  paragraph:
+    accordion:
+      field_paragraphs:
+        enabled: true
+    accordion_item:
+      field_title:
+        enabled: true
+      field_wysiwyg:
+        enabled: true
+    block_embed:
+      field_block:
+        enabled: true
+    call_to_action:
+      field_link:
+        enabled: true
+      field_media_item:
+        enabled: true
+      field_title:
+        enabled: true
+      field_wysiwyg:
+        enabled: true
+    card:
+      field_card_link:
+        enabled: true
+      field_card_media:
+        enabled: true
+      field_card_subtitle:
+        enabled: true
+      field_card_title:
+        enabled: true
+    cards:
+      field_cards:
+        enabled: true
+    dynamic_card:
+      field_card_reference:
+        enabled: true
+    hero:
+      field_hero_alignment:
+        enabled: true
+      field_hero_has_overlay:
+        enabled: true
+      field_link:
+        enabled: true
+      field_media_item:
+        enabled: true
+      field_title:
+        enabled: true
+      field_wysiwyg:
+        enabled: true
+    tab:
+      field_title:
+        enabled: true
+      field_wysiwyg:
+        enabled: true
+    tabs:
+      field_paragraphs:
+        enabled: true
+    wysiwyg:
+      field_wysiwyg:
+        enabled: true
+settings:
+  exclude_unpublished: true
+  expose_entity_ids: false
+  field_required_override: false
+  schema_description: 'GraphQL Compose'
+  schema_version: '1'
+  simple_queries: true
+  simple_unions: true
+  site_name: false
+  site_slogan: false
+  site_front: true
+  inflector_langcode: en
+  inflector_singularize: false

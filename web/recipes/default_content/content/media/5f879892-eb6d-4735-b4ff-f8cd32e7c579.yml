@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5f879892-eb6d-4735-b4ff-f8cd32e7c579
+  bundle: image
+  default_langcode: en
+  depends:
+    9957c642-4f9c-42d8-943d-da4310281171: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 208-800x600.jpg
+  created:
+    -
+      value: 1730792001
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://drupal-project.ddev.site/node'
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 9957c642-4f9c-42d8-943d-da4310281171
+      alt: 'window from the inside looking at trees'
+      title: ''
+      width: 800
+      height: 600

@@ -1,0 +1,2 @@
+drupal/wse:^2.0@alpha
+wembassyco/workspace_plus

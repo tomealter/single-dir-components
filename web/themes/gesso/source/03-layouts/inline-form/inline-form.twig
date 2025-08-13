@@ -1,0 +1,10 @@
+{% set classes = [
+  'l-inline-form',
+  modifier_classes ? modifier_classes : '',
+]|join(' ')|trim %}
+
+<div {{ add_attributes({ 'class': classes }) }}>
+  {% block content %}
+    {{ form_content }}
+  {% endblock %}
+</div>

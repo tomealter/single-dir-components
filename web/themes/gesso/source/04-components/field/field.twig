@@ -1,0 +1,48 @@
+{% set classes = [
+  'c-field',
+  modifier_classes ? modifier_classes : '',
+]|join(' ')|trim %}
+
+{% if not label_display %}
+  {% if is_inline %}
+    {% set label_display = 'inline' %}
+  {% endif %}
+{% endif %}
+
+{% set title_classes = [
+  'c-field__label',
+  label_display == 'inline' ? 'is-inline' : '',
+  label_display == 'visually_hidden' ? 'u-visually-hidden' : '',
+]|join(' ')|trim %}
+
+{% if display_field_tag ?? true -%}
+  <{{ field_tag|default('div') }} {{ add_attributes({ 'class': classes }) }}>
+{%- endif %}
+  {% if not label_hidden -%}
+    {%- if display_label_tag ?? true -%}
+      <{{ label_tag|default('h3') }} {{ add_attributes({ 'class': title_classes }, 'title_attributes') }}>
+    {%- endif -%}
+    {{ label }}
+    {%- if display_label_tag ?? true %}</{{ label_tag|default('h3') }}>{% endif -%}
+  {%- endif -%}
+  {% if display_items_wrapper_tag ?? true -%}
+    <{{ field_items_wrapper_tag|default('div') }} {{ add_attributes({ 'class': 'c-field__content' }, 'field_items_wrapper_attributes') }}>
+  {%- endif %}
+    {%- for item in field_items -%}
+      {%- if display_item_tag ?? false -%}
+        <{{ field_item_tag|default('span') }} {{ add_attributes({ 'class': 'c-field__item' }, 'item.attributes') }}>
+      {%- endif -%}
+      {{- item.content -}}
+      {%- if display_item_tag ?? false -%}
+        </{{ field_item_tag|default('span') }}>
+      {%- endif -%}
+      {%- if show_separator ?? true -%}
+        {{- not loop.last ? separator|default(', ') -}}
+      {%- endif -%}
+    {%- endfor -%}
+  {% if display_items_wrapper_tag ?? true -%}
+    </{{ field_items_wrapper_tag|default('div') }}>
+  {%- endif %}
+{% if display_field_tag ?? true -%}
+  </{{ field_tag|default('div') }}>
+{%- endif %}

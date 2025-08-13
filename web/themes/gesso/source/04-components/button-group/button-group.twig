@@ -1,0 +1,16 @@
+{% set classes = [
+  'c-button-group',
+  is_separated ? 'c-button-group--separated' : '',
+  is_segmented ? 'c-button-group--segmented' : '',
+  modifier_classes ? modifier_classes : '',
+]|join(' ')|trim %}
+
+<{{ element ?: 'div' }}
+  class="{{ classes }}"
+  {%- if element != 'nav' %} role="group"{% endif %}
+  aria-label="{{ heading -}}
+">
+  <ul class="c-button-group__list">
+    {{ button_group_items }}
+  </ul>
+</{{ element ?: 'div' }}>

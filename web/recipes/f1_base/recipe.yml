@@ -1,0 +1,6 @@
+name: 'F1 Base'
+description: 'Provides common modules and configuration for all F1 Drupal sites'
+type: 'Site'
+
+install:
+  - media

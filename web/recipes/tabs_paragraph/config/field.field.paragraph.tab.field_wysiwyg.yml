@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wysiwyg
+    - filter.format.basic_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.tab
+  module:
+    - text
+id: paragraph.tab.field_wysiwyg
+field_name: field_wysiwyg
+entity_type: paragraph
+bundle: tab
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

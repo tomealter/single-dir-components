@@ -1,0 +1,14 @@
+{% set classes = [
+  'usa-header',
+  is_extended ? 'usa-header--extended' : 'usa-header--basic',
+  modifier_classes ? modifier_classes : '',
+]|join(' ')|trim %}
+
+<div class="usa-overlay"></div>
+<header {{ add_attributes({ 'class': classes }) }} role="banner">
+  {% if not is_extended %}<div class="usa-nav-container">{% endif %}
+  {% block content %}
+    {{ header_content }}
+  {% endblock %}
+  {% if not is_extended %}</div>{% endif %}
+</header>

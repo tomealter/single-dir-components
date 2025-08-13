@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Theme implementation for a one-column layout.
+ */
+#}
+{% if content %}
+  {% if attributes is not empty %}
+    <div{{ attributes }}>
+  {% endif %}
+
+  {% if region_attributes.content is not empty %}
+    <div{{ region_attributes.content }}>
+  {% endif %}
+
+  {{ content.content }}
+
+  {% if region_attributes.content is not empty %}
+    </div>
+  {% endif %}
+
+  {% if attributes is not empty %}
+    </div>
+  {% endif %}
+{% endif %}
+
+{% set catch_cache = content|render %}

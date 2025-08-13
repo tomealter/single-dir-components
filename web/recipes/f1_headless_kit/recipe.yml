@@ -1,0 +1,24 @@
+name: 'Forum One Headless kit'
+description: 'Provides initial configuration to enable Drupal to make content available to GraphQL and Next.js'
+type: 'Headless'
+
+recipes:
+  - f1_base
+  - landing_page_content
+
+install:
+  - graphql
+  - graphql_compose
+  - graphql_compose_routes
+  - graphql_compose_image_style
+  - graphql_compose_menus
+  - graphql_compose_views
+  - graphql_compose_blocks
+  - next
+  - next_graphql
+  - f1_next
+
+config:
+  strict: false
+  import:
+    graphql_compose: '*'

@@ -1,0 +1,29 @@
+api_version: 1
+web_docroot: true
+php_version: 8.3
+drush_version: 10
+build_step: false
+database:
+  version: 10.4
+enforce_https: full+subdomains
+workflows:
+  sync_code:
+    after:
+      - type: webphp
+        description: Run drush deploy
+        script: private/scripts/quicksilver/drush_deploy/drush_deploy.php        
+      # Uncomment this section when you enable New Relic integration. See https://github.com/pantheon-systems/quicksilver-examples/tree/main/new_relic_deploy
+      #-
+      #  type: webphp
+      #  description: 'Tag the deploy in New Relic'
+      #  script: private/scripts/quicksilver/new_relic_deploy/new_relic_deploy.php
+  deploy:
+    after:
+      - type: webphp
+        description: Run drush deploy
+        script: private/scripts/quicksilver/drush_deploy/drush_deploy.php
+      # Uncomment this section when you enable New Relic integration.
+      #-
+      # type: webphp
+      # description: 'Tag the deploy in New Relic'
+      # script: private/scripts/quicksilver/new_relic_deploy/new_relic_deploy.php

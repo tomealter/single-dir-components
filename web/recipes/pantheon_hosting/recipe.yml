@@ -1,0 +1,7 @@
+name: 'Pantheon Hosting'
+description: 'Provides initial configuration and module enabling required for hosting on Pantheon'
+type: 'Hosting'
+
+install:
+  - pantheon_advanced_page_cache
+  - redis

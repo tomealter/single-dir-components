@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme implementation to display primary and secondary local tasks.
+ *
+ * Available variables:
+ * - primary: HTML list items representing primary tasks.
+ * - secondary: HTML list items representing secondary tasks.
+ *
+ * Each item in these variables (primary and secondary) can be individually
+ * themed in menu-local-task.html.twig.
+ */
+#}
+{% if primary %}
+  {% include '@components/button-group/button-group.twig' with {
+    'heading': 'Primary tabs'|t,
+    'element': 'nav',
+    'button_group_items': primary,
+  } only %}
+{% endif %}
+
+{% if secondary %}
+  {% include '@components/button-group/button-group.twig' with {
+    'heading': 'Secondary tabs'|t,
+    'element': 'nav',
+    'button_group_items': secondary,
+  } only %}
+{% endif %}

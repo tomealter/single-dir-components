@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c63d796b-bb68-4912-abbf-35aab910b473
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 1015-800x600.jpg
+  uri:
+    -
+      value: 'public://2024-11/1015-800x600.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 86581
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730791890

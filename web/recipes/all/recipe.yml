@@ -1,0 +1,17 @@
+name: 'All'
+description: 'Provides all drupal project recipes.'
+type: 'Site'
+
+# Landing page includes hero and wysiwyg paragraphs
+recipes:
+  - accordion_paragraph
+  - block_embed_paragraph
+  - call_to_action_paragraph
+  - card_paragraph
+  - dynamic_card_paragraph
+  - dynamic_list_paragraph
+  - hero_paragraph
+  - landing_page_content
+  - media_embed_paragraph
+  - tabs_paragraph
+  - wysiwyg_paragraph

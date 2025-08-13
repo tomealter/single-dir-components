@@ -1,0 +1,13 @@
+name: 'Media Embed Paragraph'
+description: 'Provides a media embed paragraph type.'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+
+install:
+  - entity_reference_revisions
+  - media
+  - media_library
+  - paragraphs
+  - path

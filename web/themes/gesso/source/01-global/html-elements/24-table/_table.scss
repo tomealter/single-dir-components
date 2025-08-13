@@ -1,0 +1,52 @@
+// HTML Element: Table
+
+@use '00-config' as *;
+@use 'usa-table' as *;
+
+%table,
+table {
+  @include usa-table();
+}
+
+thead {
+  @media print {
+    display: table-header-group;
+  }
+}
+
+tr {
+  @media print {
+    page-break-inside: avoid;
+  }
+}
+
+@if ($wysiwyg) {
+  .ck-widget.table {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+
+    table {
+      @extend %table;
+      margin-block-start: 0;
+    }
+
+    td {
+      color: revert;
+      height: revert;
+    }
+
+    th {
+      color: revert;
+      height: revert;
+      line-height: revert;
+    }
+
+    > caption {
+      background-color: revert;
+      color: revert;
+      font-size: revert;
+      padding: revert;
+    }
+  }
+}

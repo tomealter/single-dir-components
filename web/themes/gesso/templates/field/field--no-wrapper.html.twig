@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme implementation for a field.
+ *
+ * This field template gets extended by fields that should only show the wrapper
+ * when a user is logged in.
+ */
+#}
+{%- if logged_in and title_suffix.contextual_links -%}
+  <span {{ attributes }}>
+    {{- title_suffix.contextual_links }}
+{%- endif -%}
+
+{%- for item in items -%}
+  {{- item.content -}}
+{%- endfor -%}
+
+{%- if logged_in and title_suffix.contextual_links %}</span>{% endif -%}

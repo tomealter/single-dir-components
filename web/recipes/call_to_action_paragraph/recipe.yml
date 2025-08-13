@@ -1,0 +1,15 @@
+name: 'Call to Action Paragraph type'
+description: 'Provides a simple Call to Action paragraph type'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+  # When the following dependencies are public they should be included here.
+  # For now we will assume that they are installed with the existing-config.
+  #- core/recipes/image_media_type
+  #- core/recipes/local_video_media_type
+  #- core/recipes/remote_video_media_type
+
+install:
+  - media_library
+  - paragraphs

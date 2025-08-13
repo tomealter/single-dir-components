@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 03584c1f-550c-41bd-9391-61dfa6f98d1f
+  bundle: landing_page
+  default_langcode: en
+  depends:
+    b137ce9f-9803-4f0f-8444-7ea27e38ea52: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Example Landing Page'
+  created:
+    -
+      value: 1727704992
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6d5bdff5-8459-42a0-aaf3-cce4af22dbef
+          bundle: wysiwyg
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1727705105
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_wysiwyg:
+            -
+              value: '<h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><h6>Heading 6</h6><p><strong>Lorem ipsum</strong> <em>dolor</em> sit amet, <a href="https://google.com">consectetur adipiscing</a> elit. Quisque vel nunc eu nibh dictum maximus nec id diam. Maecenas lobortis gravida massa, vitae malesuada tellus iaculis eu.&nbsp;</p><ul><li>Phasellus sem tellus, maximus sed egestas sed, iaculis sed quam.&nbsp;</li><li>Nulla bibendum pulvinar erat, at pretium odio placerat commodo.</li></ul><p>&nbsp;</p><ol><li>Etiam ac auctor tellus, a aliquam purus.&nbsp;</li><li>Mauris at tincidunt purus.&nbsp;</li></ol><blockquote><p>Donec accumsan rhoncus mi vitae sollicitudin. Donec feugiat commodo tristique. Nulla convallis dignissim metus, et mattis tortor luctus a. Sed id dui rhoncus, vulputate nulla nec, placerat massa. Proin ut mauris cursus, vehicula risus sed, aliquam erat.</p></blockquote><p><br>&nbsp;</p>'
+              format: full_html
+  field_hero:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 70b95cef-ef56-4106-87d6-3fed14ed40e7
+          bundle: hero
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1727705107
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_hero_has_overlay:
+            -
+              value: true
+          field_link:
+            -
+              uri: 'internal:/'
+              title: 'Learn more'
+              options: {  }
+          field_media_item:
+            -
+              entity: b137ce9f-9803-4f0f-8444-7ea27e38ea52
+          field_title:
+            -
+              value: 'Hero Heading'
+          field_wysiwyg:
+            -
+              value: '<p>This is the <strong>hero</strong> <em>body</em> field</p>'
+              format: basic_html

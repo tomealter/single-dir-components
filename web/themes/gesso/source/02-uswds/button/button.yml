@@ -1,0 +1,7 @@
+---
+is_button_tag: true
+is_disabled: false
+url: '#'
+button_type: 'submit'
+text: 'Button'
+modifier_classes: ''

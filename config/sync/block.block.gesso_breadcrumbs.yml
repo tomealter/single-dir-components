@@ -1,0 +1,22 @@
+uuid: d821b09e-450b-45b3-84f2-0055d2ce981d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gesso
+_core:
+  default_config_hash: KAZy34I5p9GBQBYyHlEqifF8VveQ5p30aHHsDs459as
+id: gesso_breadcrumbs
+theme: gesso
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

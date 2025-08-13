@@ -1,0 +1,16 @@
+{
+    "name": "drupal/wse",
+    "description": "Enables workspaces.",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Developer",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/wse": ""
+    }
+}

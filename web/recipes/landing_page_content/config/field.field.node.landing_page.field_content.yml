@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: wUqXwO5iAHMFp7_LV1LdJ2Qon8D-bOH6N1ZXmOQIV70
+id: node.landing_page.field_content
+field_name: field_content
+entity_type: node
+bundle: landing_page
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hero: hero
+    negate: 1
+    target_bundles_drag_drop:
+      hero:
+        weight: 3
+        enabled: true
+      wysiwyg:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

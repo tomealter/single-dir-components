@@ -1,0 +1,13 @@
+{% set classes = [
+  'usa-nav',
+  modifier_classes ? modifier_classes : '',
+]|join(' ')|trim %}
+
+<nav {{ add_attributes({ 'class': classes }) }} role="navigation" aria-label="{{ label }}">
+  {% if is_extended %}<div class="usa-nav__inner">{% endif %}
+  <button class="usa-nav__close">{{ 'Close'|t }}</button>
+  {% block content %}
+    {{ nav_content }}
+  {% endblock %}
+  {% if is_extended %}</div>{% endif %}
+</nav>

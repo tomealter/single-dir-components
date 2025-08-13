@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 2x1_1200
+label: '2x1 (1200px)'
+effects:
+  c0656142-00cd-40a9-8245-a66874fd5584:
+    uuid: c0656142-00cd-40a9-8245-a66874fd5584
+    id: image_convert
+    weight: -8
+    data:
+      extension: webp
+  5963f078-9018-4288-993a-187a19c83223:
+    uuid: 5963f078-9018-4288-993a-187a19c83223
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 1200
+      height: 600
+      crop_type: focal_point

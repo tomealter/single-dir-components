@@ -1,0 +1,20 @@
+name: 'Card Paragraph'
+description: 'Provides a card paragraph type.'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+  # When the following dependencies are public they should be included here.
+  # For now we will assume that they are installed with the existing-config.
+  #- core/recipes/image_media_type
+
+install:
+  - entity_reference_revisions
+  - focal_point
+  - link
+  - media
+  - media_library
+  - paragraphs
+  - path
+  - responsive_image
+  - views

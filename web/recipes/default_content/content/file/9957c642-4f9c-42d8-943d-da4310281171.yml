@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9957c642-4f9c-42d8-943d-da4310281171
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 208-800x600.jpg
+  uri:
+    -
+      value: 'public://2024-11/208-800x600.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 84960
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730792001

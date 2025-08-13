@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: dynamic_card
+label: 'Dynamic Card'
+icon_uuid: null
+icon_default: null
+description: 'A Card that references any node and can be selected via the Card(s) paragraph.'
+behavior_plugins: {  }

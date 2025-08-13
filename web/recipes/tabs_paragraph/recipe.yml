@@ -1,0 +1,9 @@
+name: 'Tabs Paragraph'
+description: 'Adds a "tabs" paragraph type.'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+
+install:
+  - paragraphs

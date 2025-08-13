@@ -1,0 +1,13 @@
+name: 'Paragraphs Base'
+description: 'Provides common, re-usable field storage config for paragraph entities'
+type: 'Paragraphs'
+
+recipes:
+  - f1_base
+
+install:
+  - node
+  - link
+  - media
+  - paragraphs
+  - text

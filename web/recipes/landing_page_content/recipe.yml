@@ -1,0 +1,16 @@
+name: 'Landing Page Content'
+description: 'Provides a content type with the basic configuration to create a landing page.'
+type: 'Content'
+
+recipes:
+  - hero_paragraph
+  - wysiwyg_paragraph
+  - content_base
+
+install:
+  - node
+  - path
+  - paragraphs
+
+config:
+  strict: false

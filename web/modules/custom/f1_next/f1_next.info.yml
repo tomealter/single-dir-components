@@ -1,0 +1,7 @@
+name: Forum One - Next
+type: module
+description: 'Provides alterations and drush command to be used for streamlining headless project setup.'
+package: Custom
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - drupal:consumers

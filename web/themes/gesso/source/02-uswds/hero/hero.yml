@@ -1,0 +1,13 @@
+---
+has_overlay: false
+modifier_classes: ''
+hero_callout: 'Hero callout:'
+hero_title: Bring attention to a project priority
+hero_summary: >-
+  <p>
+  Support the callout with some short explanatory text. You don’t need more
+  than a couple of sentences.
+  </p>
+hero_button_url: '#'
+hero_button_text: Call to action
+hero_image: 'https://picsum.photos/2048/820?image=11'

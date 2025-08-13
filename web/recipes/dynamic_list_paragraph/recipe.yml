@@ -1,0 +1,10 @@
+name: 'Dynamic List Paragraph'
+description: 'Adds a Dynamic List paragraph'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+
+install:
+  - paragraphs
+  - viewsreference

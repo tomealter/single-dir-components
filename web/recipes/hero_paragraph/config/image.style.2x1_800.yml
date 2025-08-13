@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 2x1_800
+label: '2x1 (800px)'
+effects:
+  d2f38373-5382-4ee3-8995-2c9938b64833:
+    uuid: d2f38373-5382-4ee3-8995-2c9938b64833
+    id: image_convert
+    weight: -8
+    data:
+      extension: webp
+  f21b269f-33e7-4645-89a9-f32a26cb3d3b:
+    uuid: f21b269f-33e7-4645-89a9-f32a26cb3d3b
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 800
+      height: 400
+      crop_type: focal_point

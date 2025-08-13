@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 2x1_2400
+label: '2x1 (2400px)'
+effects:
+  7e8a1060-2232-480e-a4ee-f01d3ef2b73e:
+    uuid: 7e8a1060-2232-480e-a4ee-f01d3ef2b73e
+    id: image_convert
+    weight: -8
+    data:
+      extension: webp
+  de371e76-7899-4aa4-b248-dc6c51148ca0:
+    uuid: de371e76-7899-4aa4-b248-dc6c51148ca0
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 2400
+      height: 1200
+      crop_type: focal_point

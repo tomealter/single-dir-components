@@ -1,0 +1,6 @@
+name: 'Dynamic Card Paragraph Type'
+description: 'A Card that references any node and can be selected via the Card(s) paragraph.'
+type: 'Paragraphs'
+
+install:
+  - paragraphs

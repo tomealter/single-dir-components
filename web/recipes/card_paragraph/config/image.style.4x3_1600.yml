@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 4x3_1600
+label: '4x3 (1600px)'
+effects:
+  32df5eee-97e9-48b4-90a7-1e328f5c2b89:
+    uuid: 32df5eee-97e9-48b4-90a7-1e328f5c2b89
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1200
+      crop_type: focal_point
+  5004a8bf-730c-4786-aa0d-b81e9a790be4:
+    uuid: 5004a8bf-730c-4786-aa0d-b81e9a790be4
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

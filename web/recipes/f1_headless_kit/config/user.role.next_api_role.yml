@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - graphql
+id: next_api_role
+label: 'Next.js Site'
+weight: 4
+is_admin: null
+permissions:
+  - 'execute graphql_compose_server arbitrary graphql requests'

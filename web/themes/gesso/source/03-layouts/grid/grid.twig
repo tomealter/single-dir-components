@@ -1,0 +1,11 @@
+{% set classes = [
+  'l-grid',
+  num_of_cols ? ('l-grid--' ~ num_of_cols ~ '-col') : '',
+  modifier_classes ? modifier_classes : '',
+]|join(' ')|trim %}
+
+<div {{ add_attributes({ 'class': classes }) }}>
+  {% block content %}
+    {{ grid_content }}
+  {% endblock %}
+</div>

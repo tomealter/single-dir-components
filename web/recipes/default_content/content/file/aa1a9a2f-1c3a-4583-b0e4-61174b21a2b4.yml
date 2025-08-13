@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: aa1a9a2f-1c3a-4583-b0e4-61174b21a2b4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 393-800x600.jpg
+  uri:
+    -
+      value: 'public://2024-11/393-800x600.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 61831
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730792065

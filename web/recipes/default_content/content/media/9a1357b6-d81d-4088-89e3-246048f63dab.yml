@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9a1357b6-d81d-4088-89e3-246048f63dab
+  bundle: image
+  default_langcode: en
+  depends:
+    aa1a9a2f-1c3a-4583-b0e4-61174b21a2b4: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 393-800x600.jpg
+  created:
+    -
+      value: 1730792065
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://drupal-project.ddev.site/node'
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: aa1a9a2f-1c3a-4583-b0e4-61174b21a2b4
+      alt: 'grassy and snowy hill'
+      title: ''
+      width: 800
+      height: 600

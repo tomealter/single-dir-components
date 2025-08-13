@@ -1,0 +1,20 @@
+uuid: cfca7dd8-55b9-4199-be69-7faa45d71a77
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gesso
+_core:
+  default_config_hash: vHaVERZV9w0Z_8IZu0MN7uNCv5zzNuflU-644GqW50A
+id: gesso_page_title
+theme: gesso
+region: title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

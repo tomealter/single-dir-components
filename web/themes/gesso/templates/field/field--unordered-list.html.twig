@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Theme implementation for a field.
+ *
+ * This field template gets extended by fields that should display as an
+ * unordered list.
+ */
+#}
+{% extends "field.html.twig" %}
+
+{% set attributes = attributes.addClass('c-field--list') %}
+
+{% set display_items_wrapper_tag = true %}
+
+{% set field_items_wrapper_tag = 'ul' %}
+
+{% set display_item_tag = true %}
+
+{% set field_item_tag = 'li' %}
+
+{% set show_separator = false %}

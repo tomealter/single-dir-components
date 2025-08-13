@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.2x1_1200
+    - image.style.2x1_1600
+    - image.style.2x1_2400
+    - image.style.2x1_400
+    - image.style.2x1_800
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 'min(100vw, 2400px)'
+      sizes_image_styles:
+        - 2x1_1200
+        - 2x1_1600
+        - 2x1_2400
+        - 2x1_400
+        - 2x1_800
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: 2x1_400

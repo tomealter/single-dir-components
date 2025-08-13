@@ -1,0 +1,18 @@
+---
+menu_name: ''
+items:
+  - title: 'Link 1'
+    url: '#'
+    original_link:
+      options:
+        attributes:
+          class: ''
+    in_active_trail: true
+    is_active: true
+  - title: 'Link 2'
+    url: '#'
+    original_link:
+      options:
+        attributes:
+          class: ''
+    in_active_trail: false

@@ -1,0 +1,10 @@
+name: 'Accordion Paragraph Type'
+description: 'Provides a simple accordion and accordion item paragraph types'
+type: 'Paragraphs'
+
+recipes:
+  - paragraphs_base
+
+install:
+  - paragraphs
+  - twig_tweak

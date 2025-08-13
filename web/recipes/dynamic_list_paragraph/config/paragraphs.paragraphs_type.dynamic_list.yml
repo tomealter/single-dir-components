@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: dynamic_list
+label: 'Dynamic List'
+icon_uuid: null
+icon_default: null
+description: 'A predefined Dynamic List of content.'
+behavior_plugins: {  }

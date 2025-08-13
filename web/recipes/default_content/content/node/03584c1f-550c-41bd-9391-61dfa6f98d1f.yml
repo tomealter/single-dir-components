@@ -1,0 +1,568 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 03584c1f-550c-41bd-9391-61dfa6f98d1f
+  bundle: landing_page
+  default_langcode: en
+  depends:
+    b137ce9f-9803-4f0f-8444-7ea27e38ea52: media
+    48722247-6dbb-4a1c-a92c-ede40fa7e134: media
+    dd07fe47-1139-4dc2-bf1b-58c766b3cb7c: media
+    5f879892-eb6d-4735-b4ff-f8cd32e7c579: media
+    9a1357b6-d81d-4088-89e3-246048f63dab: media
+    c79dc53c-5966-42c0-b15b-04a2fdea2cb6: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Example Landing Page'
+  created:
+    -
+      value: 1727704992
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Example Landing Page | Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://drupal-project.ddev.site/example-landing-page'
+  path:
+    -
+      alias: /example-landing-page
+      langcode: en
+      pathauto: 1
+  field_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6d5bdff5-8459-42a0-aaf3-cce4af22dbef
+          bundle: wysiwyg
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1727705105
+          behavior_settings:
+            -
+              value: {  }
+          field_wysiwyg:
+            -
+              value: '<h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><h6>Heading 6</h6><p><strong>Lorem ipsum</strong> <em>dolor</em> sit amet, <a href="https://google.com">consectetur adipiscing</a> elit. Quisque vel nunc eu nibh dictum maximus nec id diam. Maecenas lobortis gravida massa, vitae malesuada tellus iaculis eu.&nbsp;</p><ul><li>Phasellus sem tellus, maximus sed egestas sed, iaculis sed quam.&nbsp;</li><li>Nulla bibendum pulvinar erat, at pretium odio placerat commodo.</li></ul><p>&nbsp;</p><ol><li>Etiam ac auctor tellus, a aliquam purus.&nbsp;</li><li>Mauris at tincidunt purus.&nbsp;</li></ol><blockquote><p>Donec accumsan rhoncus mi vitae sollicitudin. Donec feugiat commodo tristique. Nulla convallis dignissim metus, et mattis tortor luctus a. Sed id dui rhoncus, vulputate nulla nec, placerat massa. Proin ut mauris cursus, vehicula risus sed, aliquam erat.</p></blockquote><p><br>&nbsp;</p>'
+              format: full_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: bfaa2fc1-258f-4d23-aa49-f5f162225dbf
+          bundle: media_embed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1738351404
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_media_item:
+            -
+              entity: b137ce9f-9803-4f0f-8444-7ea27e38ea52
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b898ff3a-5bbb-4664-92f5-b6caebe598b2
+          bundle: accordion
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730789318
+          behavior_settings:
+            -
+              value: {  }
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4bdd8c5a-43af-4ea4-a58c-b1cd6daead14
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730789318
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'First Accordion Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p>'
+                      format: basic_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7e123adf-2c7a-49dd-aa1d-f707407d4bb5
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730789372
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'Second Accordion Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>This accordion item has a lot more content so you see what it would look like.</p><p>This is WYSIWYG content, which can contain HTML markup. There is no limit to how long this content can be. It could have both <a href="https://forumone.github.io/gesso/iframe.html?viewMode=story&amp;id=components-accordion--default&amp;args=#0">internal</a> and <a href="https://example.com">external</a> links.</p><p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p><ul><li>This is a list item in an unordered list</li><li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line.</li><li>Lists can be nested inside of each other<ul><li>This is a nested list item</li><li>This is another nested list item in an unordered list</li></ul></li><li>This is the last list item</li></ul><p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><blockquote><p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p><p>Jane Doe, President and CEO</p></blockquote><p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>'
+                      format: full_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b72afa3a-f6bb-4948-bb1b-043b6f6c24de
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730789416
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'Third Accordion Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p>'
+                      format: basic_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7f00e151-efc8-4520-bcf9-3c98d7b37663
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730789429
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'Fourth Accordion Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p>'
+                      format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 97cf7e6b-8438-4cb0-b3fe-69af33deafcb
+          bundle: block_embed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730789491
+          behavior_settings:
+            -
+              value: {  }
+          field_block:
+            -
+              plugin_id: 'views_block:content_recent-block_1'
+              settings:
+                id: 'views_block:content_recent-block_1'
+                label: ''
+                label_display: false
+                provider: views
+                views_label: ''
+                items_per_page: none
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0a3f508b-dffc-4618-b4e6-debd53347b10
+          bundle: call_to_action
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730790822
+          behavior_settings:
+            -
+              value: {  }
+          field_link:
+            -
+              uri: 'https://www.forumone.com'
+              title: 'Link Text'
+              options: {  }
+          field_media_item:
+            -
+              entity: 48722247-6dbb-4a1c-a92c-ede40fa7e134
+          field_title:
+            -
+              value: 'Heading Text'
+          field_wysiwyg:
+            -
+              value: '<p>CTA content goes here…</p>'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4ef4ec58-c731-41f4-b22b-9d1a214cb6be
+          bundle: cards
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730791593
+          behavior_settings:
+            -
+              value: {  }
+          field_cards:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f6989741-9521-4077-a366-fbc04767f4b2
+                  bundle: card
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730791593
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_card_link:
+                    -
+                      uri: 'https://www.forumone.com'
+                      title: 'Link Text'
+                      options: {  }
+                  field_card_media:
+                    -
+                      entity: dd07fe47-1139-4dc2-bf1b-58c766b3cb7c
+                  field_card_subtitle:
+                    -
+                      value: 'Card Subtitle 1'
+                  field_card_title:
+                    -
+                      value: 'Card Title 1'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1d913271-e0ff-4517-ad28-74b6f645c2e2
+                  bundle: card
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730791993
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_card_link:
+                    -
+                      uri: 'https://www.forumone.com'
+                      title: 'Link Text'
+                      options: {  }
+                  field_card_media:
+                    -
+                      entity: 5f879892-eb6d-4735-b4ff-f8cd32e7c579
+                  field_card_title:
+                    -
+                      value: 'Card Title 2'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a81e2eeb-7d1a-4d91-b63f-260b92dd7d99
+                  bundle: card
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730792057
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_card_link:
+                    -
+                      uri: 'https://www.forumone.com'
+                      title: 'Link Text'
+                      options: {  }
+                  field_card_media:
+                    -
+                      entity: 9a1357b6-d81d-4088-89e3-246048f63dab
+                  field_card_subtitle:
+                    -
+                      value: 'Card Subtitle 3'
+                  field_card_title:
+                    -
+                      value: 'Card Title 3'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8bb94ac1-dab7-4689-ab25-ed876f38b855
+          bundle: dynamic_card
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730792373
+          behavior_settings:
+            -
+              value: {  }
+          field_card_reference:
+            -
+              entity: c79dc53c-5966-42c0-b15b-04a2fdea2cb6
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1b3e2148-5a53-41db-ab85-ca679efc6b34
+          bundle: dynamic_list
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730792351
+          behavior_settings:
+            -
+              value: {  }
+          field_viewsreference:
+            -
+              target_id: articles
+              display_id: block_1
+              data: 'a:6:{s:5:"limit";N;s:6:"header";N;s:6:"offset";N;s:8:"argument";N;s:5:"title";N;s:5:"pager";N;}'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 91280650-4675-44af-9a47-02ec248f857f
+          bundle: tabs
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1730792402
+          behavior_settings:
+            -
+              value: {  }
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2eb64ad3-67dc-46b5-b3dc-e1bf74de9719
+                  bundle: tab
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730792402
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'First Tab Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p>'
+                      format: basic_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d0d747ee-257d-4fc8-879f-0964ef727816
+                  bundle: tab
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730792491
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'Second Tab Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>This accordion item has a lot more content so you see what it would look like.</p><p>This is WYSIWYG content, which can contain HTML markup. There is no limit to how long this content can be. It could have both <a href="https://forumone.github.io/gesso/iframe.html?viewMode=story&amp;id=components-accordion--default&amp;args=#0">internal</a> and <a href="https://example.com">external</a> links.</p><p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p><ul><li>This is a list item in an unordered list</li><li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line.</li><li>Lists can be nested inside of each other<ul><li>This is a nested list item</li><li>This is another nested list item in an unordered list</li></ul></li><li>This is the last list item</li></ul><p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><blockquote><p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p><p>Jane Doe, President and CEO</p></blockquote><p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>'
+                      format: full_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fc06307a-48f9-445d-aae4-594c5acd643f
+                  bundle: tab
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1730792541
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_title:
+                    -
+                      value: 'Third Tab Heading'
+                  field_wysiwyg:
+                    -
+                      value: '<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p><p>This is what a successive paragraph looks like. Some people prefer a space between paragraphs, while others prefer successive paragraphs indented with no margins between them.</p>'
+                      format: basic_html
+  field_hero:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 70b95cef-ef56-4106-87d6-3fed14ed40e7
+          bundle: hero
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1727705107
+          behavior_settings:
+            -
+              value: {  }
+          field_hero_has_overlay:
+            -
+              value: true
+          field_link:
+            -
+              uri: 'internal:/'
+              title: 'Learn more'
+              options: {  }
+          field_media_item:
+            -
+              entity: b137ce9f-9803-4f0f-8444-7ea27e38ea52
+          field_title:
+            -
+              value: 'Hero Heading'
+          field_wysiwyg:
+            -
+              value: '<p>This is the <strong>hero</strong> <em>body</em> field</p>'
+              format: basic_html

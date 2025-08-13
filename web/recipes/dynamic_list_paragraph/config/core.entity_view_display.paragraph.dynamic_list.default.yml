@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dynamic_list.field_viewsreference
+    - paragraphs.paragraphs_type.dynamic_list
+  module:
+    - viewsreference
+id: paragraph.dynamic_list.default
+targetEntityType: paragraph
+bundle: dynamic_list
+mode: default
+content:
+  field_viewsreference:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

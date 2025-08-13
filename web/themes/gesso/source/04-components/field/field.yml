@@ -1,0 +1,15 @@
+---
+is_inline: false
+display_field_tag: true
+label_hidden: false
+display_label_tag: true
+label: 'Field Label'
+display_items_wrapper_tag: true
+display_item_tag: false
+show_separator: true
+separator: ', '
+field_items:
+  -
+    content: 'First field item'
+  -
+    content: 'Second field item'

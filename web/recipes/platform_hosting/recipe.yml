@@ -1,0 +1,3 @@
+name: 'Platform.sh Hosting'
+description: 'Provides initial configuration and module enabling required for hosting on Platform.sh'
+type: 'Hosting'

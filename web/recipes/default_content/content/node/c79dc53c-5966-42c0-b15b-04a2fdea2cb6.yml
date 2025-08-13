@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c79dc53c-5966-42c0-b15b-04a2fdea2cb6
+  bundle: article
+  default_langcode: en
+  depends:
+    3d483177-20fa-4970-80b7-005be9ae94f8: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Example Article'
+  created:
+    -
+      value: 1730792207
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Example Article | Drush Site-Install'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Orci volutpat blandit nullam vitae nascetur diam quam. Elit eu efficitur lacinia facilisi ultrices congue lobortis convallis elit. Ornare class quam nullam ultrices interdum parturient mauris tellus condimentum. Mauris gravida habitant ultrices posuere ridiculus vivamus nulla ac. Hac porta gravida ipsum eu sit interdum aptent.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'https://drupal-project.ddev.site/example-article'
+  path:
+    -
+      alias: /example-article
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Orci volutpat blandit nullam vitae nascetur diam quam. Elit eu efficitur lacinia facilisi ultrices congue lobortis convallis elit. Ornare class quam nullam ultrices interdum parturient mauris tellus condimentum. Mauris gravida habitant ultrices posuere ridiculus vivamus nulla ac. Hac porta gravida ipsum eu sit interdum aptent.</p><p>Fringilla tincidunt cras quisque primis tempor dictumst. Nunc in natoque aliquet fusce pretium viverra sagittis turpis. Ultricies eget magna adipiscing tortor nulla sollicitudin nisl. Tempus cursus ex rhoncus sodales, nunc interdum quam tempus in. Facilisis porttitor justo; mollis efficitur commodo libero. Euismod elit convallis egestas neque faucibus cubilia. Metus id pulvinar duis; velit facilisis nisl? Etiam varius amet mollis turpis penatibus. Anunc nam finibus tristique scelerisque ad aenean aptent?</p><p>Erat dui vivamus blandit habitant sit. Feugiat quis varius donec nostra faucibus. Egestas platea cras magna feugiat lobortis venenatis erat? Efficitur ex enim lectus phasellus commodo vivamus. Sollicitudin platea primis mattis mi justo. Aliquam primis himenaeos viverra tempor pharetra semper taciti. Vulputate felis tempus facilisis aenean id vehicula euismod dignissim.</p>'
+      format: basic_html
+      summary: ''
+  field_image:
+    -
+      entity: 3d483177-20fa-4970-80b7-005be9ae94f8
+      alt: 'waves from above'
+      title: ''
+      width: 536
+      height: 354

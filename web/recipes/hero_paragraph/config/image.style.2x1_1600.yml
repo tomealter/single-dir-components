@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 2x1_1600
+label: '2x1 (1600px)'
+effects:
+  175e2d94-05fd-48da-ab40-abc9299401d5:
+    uuid: 175e2d94-05fd-48da-ab40-abc9299401d5
+    id: image_convert
+    weight: -8
+    data:
+      extension: webp
+  d99694d3-f244-47ef-87f2-b5d18561ca75:
+    uuid: d99694d3-f244-47ef-87f2-b5d18561ca75
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 1600
+      height: 800
+      crop_type: focal_point

@@ -1,0 +1,5 @@
+services:
+  f1_next.commands:
+    class: \Drupal\f1_next\Commands\F1NextCommands
+    tags:
+      - { name: drush.command }

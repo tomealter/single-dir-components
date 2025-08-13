@@ -1,0 +1,15 @@
+---
+heading: 'Heading'
+element: 'div'
+modifier_classes: ''
+button_group_data:
+  -
+    text: 'First button'
+  -
+    text: 'Active middle button'
+    is_active: true
+  -
+    text: 'Middle button'
+  -
+    text: 'Last button'
+active_label: ''

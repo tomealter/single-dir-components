@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node.page
+site_resolver: site_selector
+configuration:
+  sites:
+    next_js_site: next_js_site
+revalidator: ''
+revalidator_configuration:
+  revalidate_page: false
+  additional_paths: ''

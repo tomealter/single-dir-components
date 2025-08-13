@@ -1,0 +1,23 @@
+// HTML Element: Preformatted Text
+
+@use '00-config' as *;
+
+pre {
+  margin-block: 0 rem(gesso-spacing(2));
+  margin-inline: 0;
+  overflow: auto;
+
+  // Add top margin when preceded by another element.
+  * + & {
+    margin-block-start: 1em;
+  }
+
+  // Add top margin to item directly after this.
+  + * {
+    margin-block-start: 1em;
+  }
+
+  @media print {
+    page-break-inside: avoid;
+  }
+}

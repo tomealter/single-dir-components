@@ -1,0 +1,646 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function gesso_helper_form_system_theme_settings_alter\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/gesso_helper.module
+
+		-
+			message: "#^Function gesso_helper_theme\\(\\) has parameter \\$existing with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/gesso_helper.module
+
+		-
+			message: "#^Function gesso_helper_theme\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/gesso_helper.module
+
+		-
+			message: "#^Function gesso_helper_validate_buttons\\(\\) has parameter \\$element with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/gesso_helper.module
+
+		-
+			message: "#^Call to method block\\(\\) on an unknown class Drush\\\\Style\\\\DrushStyle\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Call to method caution\\(\\) on an unknown class Drush\\\\Style\\\\DrushStyle\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Call to method getPath\\(\\) on an unknown class Drupal\\\\gesso_helper\\\\Commands\\\\Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Call to method rebuildThemeData\\(\\) on an unknown class Drupal\\\\gesso_helper\\\\Commands\\\\Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Call to method text\\(\\) on an unknown class Drush\\\\Style\\\\DrushStyle\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:gesso\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:gessoFileStrReplace\\(\\) has parameter \\$find with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:gessoFileStrReplace\\(\\) has parameter \\$replace with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:gessoRecursiveRm\\(\\) is unused\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^PHPDoc tag @param for parameter \\$themeHandler with type Drupal\\\\gesso_helper\\\\Commands\\\\Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface is not subtype of native type Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Parameter \\#4 \\$options of method Symfony\\\\Component\\\\Filesystem\\\\Filesystem\\:\\:mirror\\(\\) expects array, int given\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Parameter \\$themeHandler of method Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:__construct\\(\\) has invalid type Drupal\\\\gesso_helper\\\\Commands\\\\Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Property Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:\\$themeHandler \\(Drupal\\\\gesso_helper\\\\Commands\\\\Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface\\) does not accept Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Property Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:\\$themeHandler has unknown class Drupal\\\\gesso_helper\\\\Commands\\\\Drupal\\\\Core\\\\Extension\\\\ThemeHandlerInterface as its type\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Property Drupal\\\\gesso_helper\\\\Commands\\\\GessoHelperCommands\\:\\:\\$themeList type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Variable \\$name in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Commands/GessoHelperCommands.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoButton\\:\\:getInfo\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoButton.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoButton\\:\\:preRenderLink\\(\\) has parameter \\$element with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoButton.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoButton\\:\\:preRenderLink\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoButton.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoIcon\\:\\:getInfo\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoIcon.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoIcon\\:\\:preRenderIcon\\(\\) has parameter \\$element with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoIcon.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoIcon\\:\\:preRenderIcon\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoIcon.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoIconLink\\:\\:getInfo\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoIconLink.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoIconLink\\:\\:preRenderLink\\(\\) has parameter \\$element with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoIconLink.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Element\\\\GessoIconLink\\:\\:preRenderLink\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Element/GessoIconLink.php
+
+		-
+			message: "#^Call to an undefined method Drupal\\\\gesso_helper\\\\GessoHelperDirFilterExclude\\:\\:getFilename\\(\\)\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterExclude.php
+
+		-
+			message: "#^Call to an undefined method Drupal\\\\gesso_helper\\\\GessoHelperDirFilterExclude\\:\\:isDir\\(\\)\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterExclude.php
+
+		-
+			message: "#^Call to an undefined method Iterator\\<mixed, mixed\\>\\:\\:getChildren\\(\\)\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterExclude.php
+
+		-
+			message: "#^Property Drupal\\\\gesso_helper\\\\GessoHelperDirFilterExclude\\:\\:\\$exclude type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterExclude.php
+
+		-
+			message: "#^Call to an undefined method Drupal\\\\gesso_helper\\\\GessoHelperDirFilterInclude\\:\\:getFilename\\(\\)\\.$#"
+			count: 2
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterInclude.php
+
+		-
+			message: "#^Call to an undefined method Drupal\\\\gesso_helper\\\\GessoHelperDirFilterInclude\\:\\:isDir\\(\\)\\.$#"
+			count: 2
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterInclude.php
+
+		-
+			message: "#^Call to an undefined method Iterator\\<mixed, mixed\\>\\:\\:getChildren\\(\\)\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterInclude.php
+
+		-
+			message: "#^Property Drupal\\\\gesso_helper\\\\GessoHelperDirFilterInclude\\:\\:\\$includeDirs type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterInclude.php
+
+		-
+			message: "#^Property Drupal\\\\gesso_helper\\\\GessoHelperDirFilterInclude\\:\\:\\$includeFiles type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/GessoHelperDirFilterInclude.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:__construct\\(\\) has parameter \\$settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:__construct\\(\\) has parameter \\$third_party_settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:cleanModifierClasses\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:create\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:defaultSettings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:getSizes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:getStyles\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:iconDefaultSettings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:iconSettingsForm\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:iconSettingsForm\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:iconSettingsSummary\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:modifierDefaultSettings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:modifierSettingsForm\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:modifierSettingsForm\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:modifierSettingsSummary\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:settingsForm\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\GessoButtonFormatter\\:\\:settingsForm\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Parameter \\#1 \\$item of method Drupal\\\\link\\\\Plugin\\\\Field\\\\FieldFormatter\\\\LinkFormatter\\:\\:buildUrl\\(\\) expects Drupal\\\\link\\\\LinkItemInterface, Drupal\\\\Core\\\\Field\\\\FieldItemInterface given\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/GessoButtonFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:__construct\\(\\) has parameter \\$settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:__construct\\(\\) has parameter \\$third_party_settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:cleanModifierClasses\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:create\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:defaultSettings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:iconDefaultSettings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:iconSettingsForm\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:iconSettingsForm\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:iconSettingsSummary\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:modifierDefaultSettings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:modifierSettingsForm\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:modifierSettingsForm\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:modifierSettingsSummary\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:settingsForm\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\Plugin\\\\Field\\\\FieldFormatter\\\\IconLinkFormatter\\:\\:settingsForm\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Parameter \\#1 \\$item of method Drupal\\\\link\\\\Plugin\\\\Field\\\\FieldFormatter\\\\LinkFormatter\\:\\:buildUrl\\(\\) expects Drupal\\\\link\\\\LinkItemInterface, Drupal\\\\Core\\\\Field\\\\FieldItemInterface given\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/Plugin/Field/FieldFormatter/IconLinkFormatter.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\TwigExtension\\\\AddAttributesTwigExtension\\:\\:addAttributes\\(\\) has parameter \\$additional_attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/TwigExtension/AddAttributesTwigExtension.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\TwigExtension\\\\AddAttributesTwigExtension\\:\\:addAttributes\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/TwigExtension/AddAttributesTwigExtension.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\TwigExtension\\\\KeysortTwigExtension\\:\\:keysort\\(\\) has parameter \\$array with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/TwigExtension/KeysortTwigExtension.php
+
+		-
+			message: "#^Method Drupal\\\\gesso_helper\\\\TwigExtension\\\\KeysortTwigExtension\\:\\:keysort\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/gesso_helper/src/TwigExtension/KeysortTwigExtension.php
+
+		-
+			message: "#^Function gesso_theme_suggestions_block_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/block.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_block_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/block.inc
+
+		-
+			message: "#^Function gesso_preprocess_facets_item_list\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/facets.inc
+
+		-
+			message: "#^Function gesso_preprocess_facets_summary_item_list\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/facets.inc
+
+		-
+			message: "#^Function gesso_preprocess_field\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/field.inc
+
+		-
+			message: "#^Function gesso_preprocess_field\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/field.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_field_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/field.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_field_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/field.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_gesso_icon_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/field.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_gesso_icon_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/field.inc
+
+		-
+			message: "#^Function gesso_preprocess_file_link\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/file.inc
+
+		-
+			message: "#^Function gesso_form_alter\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_field_multiple_value_form\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_fieldset\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_form_element\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_input\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_links__dropbutton\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_select\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_preprocess_textarea\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_container_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_container_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_form_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_form_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_form_element_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_form_element_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/form.inc
+
+		-
+			message: "#^Function gesso_page_attachments_alter\\(\\) has parameter \\$attachments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/html.inc
+
+		-
+			message: "#^Function gesso_preprocess\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/html.inc
+
+		-
+			message: "#^Function gesso_preprocess_html\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/html.inc
+
+		-
+			message: "#^Function gesso_element_info_alter\\(\\) has parameter \\$types with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/libraries.inc
+
+		-
+			message: "#^Function gesso_library_info_build\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/libraries.inc
+
+		-
+			message: "#^Function gesso_preprocess_filter_caption\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/media.inc
+
+		-
+			message: "#^Function gesso_preprocess_image\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/media.inc
+
+		-
+			message: "#^Function gesso_preprocess_media\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/media.inc
+
+		-
+			message: "#^Function gesso_preprocess_breadcrumb\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/navigation.inc
+
+		-
+			message: "#^Function gesso_preprocess_menu\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/navigation.inc
+
+		-
+			message: "#^Function gesso_preprocess_menu_local_task\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/navigation.inc
+
+		-
+			message: "#^Function gesso_preprocess_menu_local_tasks\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/navigation.inc
+
+		-
+			message: "#^Function _add_regions_to_template\\(\\) has parameter \\$allowed_regions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/node.inc
+
+		-
+			message: "#^Function _add_regions_to_template\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/node.inc
+
+		-
+			message: "#^Function gesso_preprocess_node\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/node.inc
+
+		-
+			message: "#^Function gesso_preprocess_paragraph\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/paragraph.inc
+
+		-
+			message: "#^Function gesso_preprocess_taxonomy_term\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/taxonomy.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_taxonomy_term_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/taxonomy.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_taxonomy_term_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/taxonomy.inc
+
+		-
+			message: "#^Function gesso_preprocess_user\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/user.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_user_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/user.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_user_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/user.inc
+
+		-
+			message: "#^Function gesso_preprocess_views_view\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/views.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_views_view_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/views.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_views_view_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/views.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_views_view_unformatted_alter\\(\\) has parameter \\$suggestions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/views.inc
+
+		-
+			message: "#^Function gesso_theme_suggestions_views_view_unformatted_alter\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/includes/views.inc
+
+		-
+			message: "#^Function gesso_form_system_theme_settings_alter\\(\\) has parameter \\$form with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: docroot/themes/gesso/theme-settings.php

@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Theme implementation for a media item.
+ *
+ * This media template gets extended by media items that should be displayed
+ * within a figure element.
+ */
+#}
+{% if has_caption %}
+  {{ content }}
+{%  else %}
+  {% if bundle == 'remote_video' %}
+    {% set bundle = 'iframe' %}
+  {% endif %}
+
+  {% set modifier_classes = [
+    view_mode != 'default' ? ('c-figure--' ~ view_mode)|clean_class,
+    bundle ? ('c-figure--' ~ bundle)|clean_class,
+    attributes.hasClass('align-center') ? 'u-align-center',
+    attributes.hasClass('align-left') ? 'u-align-left',
+    attributes.hasClass('align-right') ? 'u-align-right',
+  ]|join(' ')|trim %}
+
+  {% set remove_classes = [
+    'align-center',
+    'align-left',
+    'align-right',
+  ] %}
+
+  {% include '@components/figure/figure.twig' with {
+    'attributes': attributes.removeClass(remove_classes),
+    'modifier_classes': modifier_classes,
+    'media': content,
+    'caption': caption,
+  } %}
+{% endif %}

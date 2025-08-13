@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 4x3_400
+label: '4x3 (400px)'
+effects:
+  c97a6233-3de5-42f4-9cfb-42557b5598a4:
+    uuid: c97a6233-3de5-42f4-9cfb-42557b5598a4
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300
+      crop_type: focal_point
+  cb3ee3de-c816-4bd3-86de-49d457ea20e5:
+    uuid: cb3ee3de-c816-4bd3-86de-49d457ea20e5
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

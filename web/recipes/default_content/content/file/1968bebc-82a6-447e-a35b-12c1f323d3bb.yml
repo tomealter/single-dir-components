@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1968bebc-82a6-447e-a35b-12c1f323d3bb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 409-600x400.jpg
+  uri:
+    -
+      value: 'public://2024-11/409-600x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 37063
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730790983

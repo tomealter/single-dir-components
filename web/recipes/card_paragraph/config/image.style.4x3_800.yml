@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 4x3_800
+label: '4x3 (800px)'
+effects:
+  787bea71-f10c-4029-8418-357ea1c27a14:
+    uuid: 787bea71-f10c-4029-8418-357ea1c27a14
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      crop_type: focal_point
+  5afdcbcd-7ea2-4722-82cd-18c32b763fa8:
+    uuid: 5afdcbcd-7ea2-4722-82cd-18c32b763fa8
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

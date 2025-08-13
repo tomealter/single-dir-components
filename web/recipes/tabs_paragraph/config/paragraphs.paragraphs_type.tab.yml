@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: tab
+label: Tab
+icon_uuid: null
+icon_default: null
+description: 'Comprised of a heading and content, this individual component represents a single Tab item to be used in a collection with the <em>Tabs</em> paragraph type.'
+behavior_plugins: {  }

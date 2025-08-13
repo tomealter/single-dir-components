@@ -1,0 +1,8 @@
+name: 'Forum One Hosting'
+description: 'Provides initial configuration and module enabling required for hosting on Forum One internal environments'
+type: 'Hosting'
+
+install:
+  - elasticsearch_aws_connector
+  - elasticsearch_connector
+  - memcache

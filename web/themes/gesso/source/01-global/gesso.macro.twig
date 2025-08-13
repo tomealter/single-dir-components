@@ -1,0 +1,38 @@
+{% macro read_more(url, title, label = 'Read more', hide_description = true, description_prefix = 'about', image_path = 'images') %}
+  {% include '@components/read-more-link/read-more-link.twig' with {
+    'url': url,
+    'label': label,
+    'hide_description': hide_description,
+    'description_prefix': description_prefix,
+    'title': title,
+    'image_path': image_path,
+  } %}
+{% endmacro %}
+
+{% macro tagLink(url, title) %}
+  {% include '@components/tag-link/tag-link.twig' with {
+    'url': url,
+    'title': title
+  } %}
+{% endmacro %}
+
+{% macro filesize(bytes) %}
+  {% apply spaceless %}
+    {% set kilobyte = 1024 %}
+    {% set megabyte = kilobyte * 1024 %}
+    {% set gigabyte = megabyte * 1024 %}
+    {% set terabyte = gigabyte * 1024 %}
+
+    {% if bytes < kilobyte %}
+      {{ bytes ~ ' B' }}
+    {% elseif bytes < megabyte %}
+      {{ (bytes / kilobyte)|number_format(1, '.') ~ ' KB' }}
+    {% elseif bytes < gigabyte %}
+      {{ (bytes / megabyte)|number_format(1, '.') ~ ' MB' }}
+    {% elseif bytes < terabyte %}
+      {{ (bytes / gigabyte)|number_format(1, '.') ~ ' GB' }}
+    {% else %}
+      {{ (bytes / terabyte)|number_format(1, '.') ~ ' TB' }}
+    {% endif %}
+  {% endapply %}
+{% endmacro %}

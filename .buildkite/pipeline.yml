@@ -1,0 +1,188 @@
+# Consolidate the common configuration for reuse across multiple steps.
+definitions:
+  # Configure some default step values.
+  step-defaults: &step-defaults
+    timeout_in_minutes: 15
+    retry:
+      manual:
+        permit_on_passed: true
+  plugins:
+    ecr: &ecr
+      ecr#v2.7.0:
+        login: true
+        no-include-email: true
+    aws-sm: &aws-sm
+      seek-oss/aws-sm#v2.0.0:
+        file:
+          - path: "./auth.json"
+            secret-id: "buildkite/github_access_token"
+    # This is used to verify if a Docker test image should be built to verify the Dockerfile will build for deployment
+    #
+    # The times it should be built:
+    #  - Not on either live, main or integration branches
+    #  - Need to verify that a VRT PR is not being triggered by checking that the base_branch is NOT null
+    #     along with the branch being pushed is NOT main
+    #
+    build-testing-conditional: &build-testing-conditional
+      if: |
+        (
+          build.pull_request.base_branch == null
+          && build.branch != 'live'
+          && build.branch != 'main'
+          && build.branch != 'integration'
+        )
+        || (
+          build.pull_request.base_branch != null
+          && build.branch != 'main'
+        )
+    # Will only trigger if it is either a feature branch or integration
+    linting-conditional: &linting-conditional
+      if: |
+        (
+          build.pull_request.base_branch == null
+          && build.branch != 'live'
+          && build.branch != 'main'
+        )
+        || (
+          build.pull_request.base_branch != null
+          && build.branch != 'main'
+        )
+    # Will only trigger when the branch is either: live, main, or integration
+    # Will not trigger on PRs
+    deployment-conditional: &deployment-conditional
+      if: |
+        build.branch == 'live'
+        || build.branch == 'main'
+        || build.branch == 'integration'
+    # This will only trigger when the build branch is: live, main, or integration
+    # and NOT a PR
+    build-release-conditional: &build-release-conditional
+      if: |
+        build.pull_request.base_branch == null
+        && (
+          build.branch == 'live'
+          || build.branch == 'main'
+          || build.branch == 'integration'
+        )
+  # Specify common agent queue parameters.
+  queues:
+    # Docker-based tasks should run in the Docker queue.
+    docker-agents: &docker-agents
+      agents:
+        queue: "docker-builders"
+env:
+  # If you do not declare buildkit:1 then arguments using for --target
+  # do not work correctly and they will build every steps.
+  DOCKER_BUILDKIT: 1
+  BUILDKIT_PROGRESS: plain
+
+  # Identify the address for the shared Buildkite ECR repository.
+  IMAGE_REPOSITORY: "165761832703.dkr.ecr.us-east-1.amazonaws.com"
+
+  # Define a common namespace for images to be published within the shared ECR repo.
+  ECR_NAMESPACE: "${IMAGE_REPOSITORY}/buildkite"
+
+  # Define service directory were the Dockerfile is used
+  DOCKERFILE_LOCATION: "./"
+
+  ARTIFACT_LOCATION: "./artifacts"
+steps:
+  - label: "Verify merge_request file not used."
+    key: "git-drupal-merge"
+    command: |
+      if  grep -rn --include='composer*' merge_requests . ; then
+       exit 1;
+      else
+        exit 0;
+      fi;
+  - label: ":heavy_check_mark: :php: Lint PHPCS"
+    key: "lint_phpcs"
+    soft_fail:
+      - exit_status: 1
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *linting-conditional
+    commands:
+      - 'echo "--- :docker: Build PHP_CodeSniffer Linting Docker Image"'
+      - "docker build --target php-linting -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting ${DOCKERFILE_LOCATION}"
+      - 'echo "--- :docker: Run PHP_CodeSniffer Linting"'
+      - "docker run --rm ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting composer phpcs"
+
+  - label: ":heavy_check_mark: :php: Lint PHPStan"
+    key: "lint_phpstan"
+    soft_fail:
+      - exit_status: 1
+    <<: *step-defaults
+    <<: *docker-agents
+    plugins:
+      - *ecr
+    <<: *linting-conditional
+    commands:
+      - 'echo "--- :docker: Build PHPStan Linting Image"'
+      - "docker build --target php-linting -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting ${DOCKERFILE_LOCATION}"
+      - 'echo "--- :docker: Run PHPStan Linting"'
+      - "docker run --rm ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-php-linting composer php-stan"
+
+  - label: ":heavy_check_mark: :stylelint: Lint Stylelint"
+    key: "lint_stylelint"
+    soft_fail:
+      - exit_status: 1
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *linting-conditional
+    commands:
+      - 'echo "--- :docker: Build Theme ESLint Linting Docker Image"'
+      - "docker build --target theme-base -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-theme-linting ${DOCKERFILE_LOCATION}"
+      - 'echo "--- :docker: Run Theme ESLint Linting"'
+      - "docker run --rm ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-theme-linting npm run stylelint"
+
+  - label: ":heavy_check_mark: :stylelint: Lint eslint"
+    key: "lint_eslint"
+    soft_fail:
+      - exit_status: 1
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *linting-conditional
+    commands:
+      - 'echo "--- :docker: Build Theme StyleLint Linting Docker Image"'
+      - "docker build --target theme-base -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-theme-linting ${DOCKERFILE_LOCATION}"
+      - 'echo "--- :docker: Run Theme StyleLint Linting"'
+      - "docker run --rm ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}-theme-linting npm run eslint"
+
+  - label: ":hammer: :docker: Building Docker Test Image"
+    key: "building-image-test"
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *build-testing-conditional
+    retry:
+      manual:
+        permit_on_passed: true
+    command:
+      - "docker build --target artifact -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT} ${DOCKERFILE_LOCATION}"
+    plugins:
+      - *aws-sm
+
+  - label: ":hammer: :docker: Building Release image"
+    key: "build-release"
+    <<: *step-defaults
+    <<: *docker-agents
+    <<: *build-release-conditional
+    retry:
+      manual:
+        permit_on_passed: true
+    command:
+      - "docker build --target artifact -t ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT} ${DOCKERFILE_LOCATION}"
+      - "docker push ${ECR_NAMESPACE}:${BUILDKITE_PIPELINE_SLUG}-${BUILDKITE_COMMIT}"
+    plugins:
+      - *ecr
+      - *aws-sm
+
+  # Wait for images to finish building.
+  - wait: ~
+
+  - label: "Pulling deployment steps"
+    <<: *step-defaults
+    key: "deploy-steps"
+    depends_on: "build-release"
+    <<: *deployment-conditional
+    command: "buildkite-agent pipeline upload .buildkite/pipeline.deploy.yml"

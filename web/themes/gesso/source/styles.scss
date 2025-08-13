@@ -1,0 +1,16 @@
+// Main styles
+
+@use '00-config' as *;
+
+@forward 'uswds-global';
+@use '01-global' as *;
+
+// USWDS components.
+@forward 'uswds-form-controls';
+@forward 'usa-layout-grid';
+
+@use '02-uswds' as *;
+@use '03-layouts' as *;
+@use '04-components' as *;
+@use '07-utility' as *;
+@use 'shame';

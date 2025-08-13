@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e592a173-71a0-4188-b24e-f599c7d0aa24
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: neom-HYHYGLs-Rp8-unsplash.jpg
+  uri:
+    -
+      value: 'public://2024-09/neom-HYHYGLs-Rp8-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9711290
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727705009

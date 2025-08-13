@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.4x3_1600
+    - image.style.4x3_400
+    - image.style.4x3_800
+id: card
+label: Card
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 47.5em) calc((100vw - 5rem) / 3), 100vw'
+      sizes_image_styles:
+        - 4x3_1600
+        - 4x3_400
+        - 4x3_800
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: 4x3_400

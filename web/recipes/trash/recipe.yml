@@ -1,0 +1,6 @@
+name: 'Trash'
+description: 'Adds a trash bin for all content entities, similar to Wordpress'
+type: 'Workflow'
+
+install:
+  - trash
