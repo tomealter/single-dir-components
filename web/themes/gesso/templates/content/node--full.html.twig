@@ -82,6 +82,24 @@
   {% set show_admin_info = true %}
 {% endif %}
 
+{% set cta_summary %}
+  <p>Etiam accumsan urna a mauris dapibus, nec aliquet nunc convallis. Phasellus eget justo et libero ultrices posuere. Cras euismod, arcu nec congue convallis, ipsum nunc cursus nibh, vel condimentum sapien orci non libero. Integer ullamcorper felis sit amet felis placerat, eu convallis lorem iaculis.</p>
+{% endset %}
+
+{% set main_content %}
+  {{ content }}
+  {{ include('guswds:cta', {
+    modifier_classes: '',
+    title: 'Ipsum Nunc en Cursus Nibh',
+    summary: cta_summary,
+    link: {
+      url: 'https://www.google.com',
+      title: 'CTA Link',
+    },
+    background_color: 'white',
+  }, with_context = false) }}
+{% endset %}
+
 {% include '@templates/page/page.twig' with {
   'attributes': attributes.addClass(classes),
   'is_published': node.isPublished(),
@@ -93,7 +111,7 @@
   'author': author_name,
   'author_picture': author_picture,
   'rdf_metadata': metadata,
-  'content': content,
+  'content': main_content,
 } %}
 
 {# Uncomment the following if you don’t render the content variable. #}

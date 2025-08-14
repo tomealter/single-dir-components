@@ -1,0 +1,19 @@
+{%
+  set classes = [
+  'cta',
+  'cta--bg-color-' ~ background_color|clean_class,
+  modifier_classes ? 'cta--' ~ modifier_classes|clean_class,
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="cta__content">
+    <h2 class="cta__title">{{ title }}</h2>
+    <div class="cta__summary">{{ summary }}</div>
+  </div>
+  {% if link %}
+    <div class="cta__link">
+      <a href="{{ link.url }}" class="cta__link-text">{{ link.title }}</a>
+    </div>
+  {% endif %}
+</div>

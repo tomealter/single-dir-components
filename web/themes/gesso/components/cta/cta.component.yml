@@ -1,0 +1,50 @@
+name: CTA
+props:
+  type: object
+  required:
+    - title
+    - summary
+  properties:
+    # The main title/heading for the CTA
+    title:
+      type: string
+      title: Title
+      description: The main heading or title for the call-to-action component.
+    # The summary or supporting text (rich text)
+    summary:
+      type: string
+      title: Summary
+      description: Supporting text or summary that appears below the main title. Accepts rich text from WYSIWYG editor.
+      format: wysiwyg
+    # Optional link configuration
+    link:
+      type: object
+      title: Link
+      description: Optional link configuration for the CTA button or text.
+      properties:
+        url:
+          type: string
+          title: URL
+          description: The destination URL for the link.
+        text:
+          type: string
+          title: Link Text
+          description: The text to display for the link.
+        target:
+          type: string
+          title: Target
+          description: Link target attribute (e.g., '_blank' for new window).
+          enum: ['_self', '_blank', '_parent', '_top']
+          default: '_self'
+    # Background color selection
+    background_color:
+      type: string
+      title: Background Color
+      description: Background color for the CTA component.
+      enum: ['white', 'grey', 'blue']
+      default: 'white'
+    # Additional CSS classes for styling
+    modifier_classes:
+      type: string
+      title: Modifier Classes
+      description: Additional CSS classes for custom styling.
